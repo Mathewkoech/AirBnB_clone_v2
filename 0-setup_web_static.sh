@@ -1,4 +1,4 @@
-#!/bin/bash
+#!usr/bin/env bash
 # Install Nginxif does not exist
 if ! which nginx >/dev/null 2>&1; then
   sudo apt-get update
