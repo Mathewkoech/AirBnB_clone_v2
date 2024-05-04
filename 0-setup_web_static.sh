@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # Install Nginxif does not exist
-if ! which nginx >/dev/null 2>&1; then
-  sudo apt-get update
-  sudo apt-get install -y nginx
-fi
+sudo apt-get update
+sudo apt-get install -y nginx
+
 sudo ufw allow 'Nginx HTTP'
 # Create directories
 sudo mkdir -p /data/
