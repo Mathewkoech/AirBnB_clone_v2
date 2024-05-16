@@ -9,6 +9,9 @@ env.key_filename = "/home/mathew/.ssh/school"
 
 
 def do_deploy(archive_path):
+    """
+    Deploys archive
+    """
     if exists(archive_path) is False:
         return False
     try:
