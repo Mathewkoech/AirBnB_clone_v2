@@ -4,7 +4,7 @@ from os.path import exists
 from fabric.api import put, run, env
 env.hosts = ['35.174.211.175', '54.87.250.164']
 env.user = 'ubuntu'
-env.key_filename = "/home/mathew/.ssh/school" 
+env.key_filename = "/home/mathew/.ssh/school"
 
 
 def do_deploy(archive_path):
