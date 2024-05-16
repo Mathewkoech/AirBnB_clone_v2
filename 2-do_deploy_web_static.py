@@ -2,7 +2,7 @@
 """distributes an archive to your web servers, using the function do_deploy"""
 from os.path import exists
 from fabric.api import put, run, env
-env.hosts = ['34.224.6.165', '100.27.10.187']
+env.hosts = ['35.174.211.175', '54.87.250.164']
 env.user = 'ubuntu'
 env.key_filename = "/home/mathew/.ssh/school" 
 
