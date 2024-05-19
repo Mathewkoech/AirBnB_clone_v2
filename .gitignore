@@ -4,3 +4,5 @@ venv/
 main_delete.py
 .env/
 env/
+7-dump.sql
+10-dump.sql
