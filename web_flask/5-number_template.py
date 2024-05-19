@@ -38,16 +38,19 @@ def show_text(text):
     text = text.replace('_', ' ')
     return f"C {text}"
 
+
 @app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python_text(text):
     """returns Python followed by text"""
     return 'Python {}'.format(text.replace('_', ' '))
 
+
 @app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
     """returns n is a number"""
     return '{} is a number'.format(n)
+
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
